@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="crud.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- <header>
+      <h1>Student Management System</h1>
+    </header>
+    <main>
+      <div class="container">
+        <form>
+          <h2>Add Student</h2>
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Name" id="name" required>
+          <label for="age">Age:</label>
+          <input type="number" placeholder="Age" id="age" required>
+          <label for="grade">Grade:</label>
+          <input type="text" placeholder="Grade" id="grade" required>
+          <label for="degree">Degree:</label>
+          <input type="text" placeholder="Degree" id="degree" required>
+          <label for="email">Email:</label>
+          <input type="email"placeholder="Email" id="email" required>
+          <br>
+          <button id="addStudentBtn" type="submit">Add Student</button>
+        </form>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search by name, email, or degree...">
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Grade</th>
+              <th>Degree</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </main> -->
+    <div class="container">
+        <h1>Student Management CRUD</h1>
+        <div class="input-container">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <input type="number" placeholder="GPA" id="grade">
+            <input type="number" placeholder="Age" id="age">
+            <input type="text" placeholder="Degree" id="degree">
+        </div>
+
+        <div class='button'>
+            <button type="submit" id="submit" onclick="addStudent()">Add Student</button>
+        </div>
+
+
+        <input class="search" type="text" id="search" onkeyup="search()" placeholder="Search By Name, email or Degree">
+
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th class="dg">Degree</th>
+                    <!-- <th>ops</th> -->
+                </tr>
+            </thead>
+
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
